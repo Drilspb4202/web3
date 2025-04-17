@@ -4,9 +4,8 @@ import type { AppProps } from 'next/app';
 import { wagmiConfig } from '@/config/wagmi';
 import '@/styles/globals.css';
 import { useEffect } from 'react';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme } from '@mui/material/styles';
+// Импортируем все компоненты из основного модуля @mui/material
+import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
 
 // Создание темы Material UI, соответствующей цветам Tailwind
 const theme = createTheme({
