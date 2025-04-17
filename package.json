@@ -1,0 +1,31 @@
+{
+  "name": "chihuahua-capital",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "contracts": "yarn workspace @chihuahua-capital/contracts",
+    "frontend": "yarn workspace @chihuahua-capital/frontend",
+    "common": "yarn workspace @chihuahua-capital/common",
+    "test": "yarn contracts test",
+    "deploy:fuji": "yarn contracts deploy:fuji",
+    "frontend:dev": "yarn frontend dev",
+    "dev": "turbo run dev",
+    "dev:frontend": "cd packages/frontend && next dev",
+    "build": "turbo run build",
+    "start": "turbo run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "framer-motion": "^12.7.4"
+  }
+}

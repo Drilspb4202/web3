@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="100" fill="#FF8042"/>
+  <path d="M55 140L80 60H95L120 140H105L95 100H80L70 140H55Z" fill="white"/>
+  <path d="M130 60H170C175 60 180 65 180 75V125C180 135 175 140 165 140H130V60Z" fill="white"/>
+  <path d="M150 80V120H160C165 120 165 115 165 110V90C165 85 165 80 160 80H150Z" fill="#FF8042"/>
+</svg> 

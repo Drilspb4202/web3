@@ -1,0 +1,448 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0095ff;
+  --primary-hover: #0077cc;
+  --secondary-color: #f98307;
+  --secondary-hover: #dd6302;
+  --gradient-start: #3a7bd5;
+  --gradient-end: #00d2ff;
+  --dark-gradient-start: #141e30;
+  --dark-gradient-end: #243b55;
+  --success-color: #38b2ac;
+  --error-color: #f56565;
+  --warning-color: #ed8936;
+  --info-color: #4299e1;
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --card-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --card-transition: all 0.3s ease;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #333;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Глобальные переходы для интерактивных элементов */
+button, a, .transition-all {
+  transition: all 0.2s ease;
+}
+
+/* Стили для Material UI компонентов */
+.MuiCard-root {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: var(--card-hover-shadow) !important;
+}
+
+.MuiButton-root {
+  text-transform: none !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+  border-radius: 8px !important;
+  padding: 8px 16px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08) !important;
+}
+
+.MuiButton-containedPrimary {
+  background: linear-gradient(90deg, var(--primary-color), #3a7bd5) !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  background: linear-gradient(90deg, #0077cc, #2a6ac5) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.MuiButton-containedSecondary {
+  background: linear-gradient(90deg, var(--secondary-color), #ff6b6b) !important;
+}
+
+.MuiButton-containedSecondary:hover {
+  background: linear-gradient(90deg, var(--secondary-hover), #ff5252) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.MuiChip-root {
+  font-weight: 500 !important;
+  border-radius: 6px !important;
+}
+
+/* Стили для градиентных карточек */
+.bg-gradient-card {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.currency-card {
+  transition: all 0.3s ease;
+  background: linear-gradient(120deg, #ffffff 0%, #f5f9ff 100%);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 149, 255, 0.1);
+}
+
+.currency-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 149, 255, 0.15);
+  border-color: rgba(0, 149, 255, 0.3);
+}
+
+.currency-value {
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0077cc, #3a7bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4px;
+}
+
+.currency-symbol {
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Стилизованные заголовки секций */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #2d3748;
+  letter-spacing: -0.025em;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--gradient-end));
+  border-radius: 4px;
+}
+
+/* Улучшенные карточки токенов */
+.token-card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  box-shadow: var(--card-shadow);
+  transition: var(--card-transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.token-card:hover {
+  box-shadow: var(--card-hover-shadow);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.token-card__header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(249, 250, 251, 0.8) 0%, rgba(242, 244, 248, 0.8) 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.token-card__body {
+  padding: 16px;
+}
+
+.token-card__footer {
+  padding: 12px 16px;
+  background: rgba(249, 250, 251, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Улучшенные стили для кнопок */
+.btn-primary {
+  background: linear-gradient(90deg, var(--primary-color), var(--gradient-start));
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, var(--primary-hover), var(--gradient-start));
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-secondary {
+  background: linear-gradient(90deg, var(--secondary-color), #ff6b6b);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(90deg, var(--secondary-hover), #ff5252);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+  background: rgba(0, 149, 255, 0.05);
+  border-color: var(--primary-hover);
+  color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* Анимированные градиенты */
+.animated-gradient {
+  background: linear-gradient(-45deg, var(--gradient-start), var(--gradient-end), var(--secondary-color), var(--dark-gradient-start));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Стиль для статистических данных */
+.stat-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  transition: var(--card-transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.stat-card__title {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card__value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.stat-card__change {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+
+.stat-card__change--positive {
+  color: var(--success-color);
+}
+
+.stat-card__change--negative {
+  color: var(--error-color);
+}
+
+/* Заглушки для загрузки (скелетон) */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #f8f8f8 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Стили для загрузочного индикатора */
+.spinner {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 3px solid var(--primary-color);
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Стили для всплывающих уведомлений */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  color: white;
+  max-width: 300px;
+  z-index: 1000;
+  animation: slide-in 0.3s ease-out forwards;
+}
+
+.toast-success {
+  background: linear-gradient(90deg, #38b2ac, #2c7a7b);
+}
+
+.toast-error {
+  background: linear-gradient(90deg, #f56565, #c53030);
+}
+
+.toast-warning {
+  background: linear-gradient(90deg, #ed8936, #c05621);
+}
+
+.toast-info {
+  background: linear-gradient(90deg, #4299e1, #2b6cb0);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-gray-900 font-semibold leading-tight;
+  }
+  
+  h1 {
+    @apply text-4xl;
+  }
+  
+  h2 {
+    @apply text-3xl;
+  }
+  
+  h3 {
+    @apply text-2xl;
+  }
+  
+  a {
+    @apply text-blue-600 hover:text-blue-800;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .page-section {
+    @apply py-12;
+  }
+  
+  .form-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 shadow-sm;
+  }
+  
+  .form-label {
+    @apply block mb-2 text-sm font-medium text-gray-700;
+  }
+  
+  .form-error {
+    @apply mt-1 text-sm text-red-600;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-success {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .badge-error {
+    @apply bg-red-100 text-red-800;
+  }
+  
+  .badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+  
+  .badge-info {
+    @apply bg-blue-100 text-blue-800;
+  }
+}
+
+/* Адаптивные улучшения */
+@media (max-width: 640px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .currency-value {
+    font-size: 18px;
+  }
+  
+  .btn-primary, .btn-secondary, .btn-outline {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .token-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} 

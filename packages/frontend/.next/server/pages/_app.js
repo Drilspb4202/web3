@@ -1,0 +1,156 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
+exports.modules = {
+
+/***/ "./config/wagmi.ts":
+/*!*************************!*\
+  !*** ./config/wagmi.ts ***!
+  \*************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   AVALANCHE_FUJI: () => (/* binding */ AVALANCHE_FUJI),\n/* harmony export */   CONTRACT_ADDRESSES: () => (/* binding */ CONTRACT_ADDRESSES),\n/* harmony export */   updateContractAddresses: () => (/* binding */ updateContractAddresses),\n/* harmony export */   wagmiConfig: () => (/* binding */ wagmiConfig)\n/* harmony export */ });\n/* harmony import */ var wagmi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! wagmi */ \"wagmi\");\n/* harmony import */ var wagmi_chains__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! wagmi/chains */ \"wagmi/chains\");\n/* harmony import */ var wagmi_connectors_metaMask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! wagmi/connectors/metaMask */ \"wagmi/connectors/metaMask\");\n/* harmony import */ var wagmi_providers_public__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! wagmi/providers/public */ \"wagmi/providers/public\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([wagmi__WEBPACK_IMPORTED_MODULE_0__, wagmi_chains__WEBPACK_IMPORTED_MODULE_1__, wagmi_connectors_metaMask__WEBPACK_IMPORTED_MODULE_2__, wagmi_providers_public__WEBPACK_IMPORTED_MODULE_3__]);\n([wagmi__WEBPACK_IMPORTED_MODULE_0__, wagmi_chains__WEBPACK_IMPORTED_MODULE_1__, wagmi_connectors_metaMask__WEBPACK_IMPORTED_MODULE_2__, wagmi_providers_public__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n// Настройка цепей\nconst { chains, publicClient } = (0,wagmi__WEBPACK_IMPORTED_MODULE_0__.configureChains)([\n    wagmi_chains__WEBPACK_IMPORTED_MODULE_1__.avalancheFuji\n], [\n    (0,wagmi_providers_public__WEBPACK_IMPORTED_MODULE_3__.publicProvider)()\n]);\n// Создание конфигурации\nconst wagmiConfig = (0,wagmi__WEBPACK_IMPORTED_MODULE_0__.createConfig)({\n    autoConnect: true,\n    connectors: [\n        new wagmi_connectors_metaMask__WEBPACK_IMPORTED_MODULE_2__.MetaMaskConnector({\n            chains\n        })\n    ],\n    publicClient\n});\n// Информация о сети Avalanche Fuji\nconst AVALANCHE_FUJI = {\n    id: wagmi_chains__WEBPACK_IMPORTED_MODULE_1__.avalancheFuji.id,\n    name: wagmi_chains__WEBPACK_IMPORTED_MODULE_1__.avalancheFuji.name,\n    network: wagmi_chains__WEBPACK_IMPORTED_MODULE_1__.avalancheFuji.network,\n    nativeCurrency: wagmi_chains__WEBPACK_IMPORTED_MODULE_1__.avalancheFuji.nativeCurrency,\n    rpcUrls: wagmi_chains__WEBPACK_IMPORTED_MODULE_1__.avalancheFuji.rpcUrls,\n    blockExplorers: wagmi_chains__WEBPACK_IMPORTED_MODULE_1__.avalancheFuji.blockExplorers\n};\n// Адреса контрактов - будут заменены после деплоя\nconst CONTRACT_ADDRESSES = {\n    ChihCapitalToken: \"\",\n    TokenFactory: \"\",\n    ChihStakingPool: \"\",\n    SimpleMarketplace: \"\"\n};\n// Функция для обновления адресов из деплоя\nconst updateContractAddresses = (addresses)=>{\n    Object.assign(CONTRACT_ADDRESSES, addresses);\n};\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb25maWcvd2FnbWkudHMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFBc0Q7QUFDVDtBQUNpQjtBQUNOO0FBRXhELGtCQUFrQjtBQUNsQixNQUFNLEVBQUVLLE1BQU0sRUFBRUMsWUFBWSxFQUFFLEdBQUdOLHNEQUFlQSxDQUM5QztJQUFDRSx1REFBYUE7Q0FBQyxFQUNmO0lBQUNFLHNFQUFjQTtDQUFHO0FBR3BCLHdCQUF3QjtBQUNqQixNQUFNRyxjQUFjTixtREFBWUEsQ0FBQztJQUN0Q08sYUFBYTtJQUNiQyxZQUFZO1FBQ1YsSUFBSU4sd0VBQWlCQSxDQUFDO1lBQUVFO1FBQU87S0FDaEM7SUFDREM7QUFDRixHQUFHO0FBRUgsbUNBQW1DO0FBQzVCLE1BQU1JLGlCQUFpQjtJQUM1QkMsSUFBSVQsdURBQWFBLENBQUNTLEVBQUU7SUFDcEJDLE1BQU1WLHVEQUFhQSxDQUFDVSxJQUFJO0lBQ3hCQyxTQUFTWCx1REFBYUEsQ0FBQ1csT0FBTztJQUM5QkMsZ0JBQWdCWix1REFBYUEsQ0FBQ1ksY0FBYztJQUM1Q0MsU0FBU2IsdURBQWFBLENBQUNhLE9BQU87SUFDOUJDLGdCQUFnQmQsdURBQWFBLENBQUNjLGNBQWM7QUFDOUMsRUFBRTtBQUVGLGtEQUFrRDtBQUMzQyxNQUFNQyxxQkFBcUI7SUFDaENDLGtCQUFrQjtJQUNsQkMsY0FBYztJQUNkQyxpQkFBaUI7SUFDakJDLG1CQUFtQjtBQUNyQixFQUFFO0FBRUYsMkNBQTJDO0FBQ3BDLE1BQU1DLDBCQUEwQixDQUFDQztJQU10Q0MsT0FBT0MsTUFBTSxDQUFDUixvQkFBb0JNO0FBQ3BDLEVBQUUiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9AY2hpaHVhaHVhLWNhcGl0YWwvZnJvbnRlbmQvLi9jb25maWcvd2FnbWkudHM/YTk1NCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjb25maWd1cmVDaGFpbnMsIGNyZWF0ZUNvbmZpZyB9IGZyb20gJ3dhZ21pJztcclxuaW1wb3J0IHsgYXZhbGFuY2hlRnVqaSB9IGZyb20gJ3dhZ21pL2NoYWlucyc7XHJcbmltcG9ydCB7IE1ldGFNYXNrQ29ubmVjdG9yIH0gZnJvbSAnd2FnbWkvY29ubmVjdG9ycy9tZXRhTWFzayc7XHJcbmltcG9ydCB7IHB1YmxpY1Byb3ZpZGVyIH0gZnJvbSAnd2FnbWkvcHJvdmlkZXJzL3B1YmxpYyc7XHJcblxyXG4vLyDQndCw0YHRgtGA0L7QudC60LAg0YbQtdC/0LXQuVxyXG5jb25zdCB7IGNoYWlucywgcHVibGljQ2xpZW50IH0gPSBjb25maWd1cmVDaGFpbnMoXHJcbiAgW2F2YWxhbmNoZUZ1amldLFxyXG4gIFtwdWJsaWNQcm92aWRlcigpXVxyXG4pO1xyXG5cclxuLy8g0KHQvtC30LTQsNC90LjQtSDQutC+0L3RhNC40LPRg9GA0LDRhtC40LhcclxuZXhwb3J0IGNvbnN0IHdhZ21pQ29uZmlnID0gY3JlYXRlQ29uZmlnKHtcclxuICBhdXRvQ29ubmVjdDogdHJ1ZSxcclxuICBjb25uZWN0b3JzOiBbXHJcbiAgICBuZXcgTWV0YU1hc2tDb25uZWN0b3IoeyBjaGFpbnMgfSksXHJcbiAgXSxcclxuICBwdWJsaWNDbGllbnQsXHJcbn0pO1xyXG5cclxuLy8g0JjQvdGE0L7RgNC80LDRhtC40Y8g0L4g0YHQtdGC0LggQXZhbGFuY2hlIEZ1amlcclxuZXhwb3J0IGNvbnN0IEFWQUxBTkNIRV9GVUpJID0ge1xyXG4gIGlkOiBhdmFsYW5jaGVGdWppLmlkLFxyXG4gIG5hbWU6IGF2YWxhbmNoZUZ1amkubmFtZSxcclxuICBuZXR3b3JrOiBhdmFsYW5jaGVGdWppLm5ldHdvcmssXHJcbiAgbmF0aXZlQ3VycmVuY3k6IGF2YWxhbmNoZUZ1amkubmF0aXZlQ3VycmVuY3ksXHJcbiAgcnBjVXJsczogYXZhbGFuY2hlRnVqaS5ycGNVcmxzLFxyXG4gIGJsb2NrRXhwbG9yZXJzOiBhdmFsYW5jaGVGdWppLmJsb2NrRXhwbG9yZXJzLFxyXG59O1xyXG5cclxuLy8g0JDQtNGA0LXRgdCwINC60L7QvdGC0YDQsNC60YLQvtCyIC0g0LHRg9C00YPRgiDQt9Cw0LzQtdC90LXQvdGLINC/0L7RgdC70LUg0LTQtdC/0LvQvtGPXHJcbmV4cG9ydCBjb25zdCBDT05UUkFDVF9BRERSRVNTRVMgPSB7XHJcbiAgQ2hpaENhcGl0YWxUb2tlbjogJycsXHJcbiAgVG9rZW5GYWN0b3J5OiAnJyxcclxuICBDaGloU3Rha2luZ1Bvb2w6ICcnLFxyXG4gIFNpbXBsZU1hcmtldHBsYWNlOiAnJyxcclxufTtcclxuXHJcbi8vINCk0YPQvdC60YbQuNGPINC00LvRjyDQvtCx0L3QvtCy0LvQtdC90LjRjyDQsNC00YDQtdGB0L7QsiDQuNC3INC00LXQv9C70L7Rj1xyXG5leHBvcnQgY29uc3QgdXBkYXRlQ29udHJhY3RBZGRyZXNzZXMgPSAoYWRkcmVzc2VzOiB7XHJcbiAgQ2hpaENhcGl0YWxUb2tlbjogc3RyaW5nO1xyXG4gIFRva2VuRmFjdG9yeTogc3RyaW5nO1xyXG4gIENoaWhTdGFraW5nUG9vbDogc3RyaW5nO1xyXG4gIFNpbXBsZU1hcmtldHBsYWNlOiBzdHJpbmc7XHJcbn0pID0+IHtcclxuICBPYmplY3QuYXNzaWduKENPTlRSQUNUX0FERFJFU1NFUywgYWRkcmVzc2VzKTtcclxufTsgIl0sIm5hbWVzIjpbImNvbmZpZ3VyZUNoYWlucyIsImNyZWF0ZUNvbmZpZyIsImF2YWxhbmNoZUZ1amkiLCJNZXRhTWFza0Nvbm5lY3RvciIsInB1YmxpY1Byb3ZpZGVyIiwiY2hhaW5zIiwicHVibGljQ2xpZW50Iiwid2FnbWlDb25maWciLCJhdXRvQ29ubmVjdCIsImNvbm5lY3RvcnMiLCJBVkFMQU5DSEVfRlVKSSIsImlkIiwibmFtZSIsIm5ldHdvcmsiLCJuYXRpdmVDdXJyZW5jeSIsInJwY1VybHMiLCJibG9ja0V4cGxvcmVycyIsIkNPTlRSQUNUX0FERFJFU1NFUyIsIkNoaWhDYXBpdGFsVG9rZW4iLCJUb2tlbkZhY3RvcnkiLCJDaGloU3Rha2luZ1Bvb2wiLCJTaW1wbGVNYXJrZXRwbGFjZSIsInVwZGF0ZUNvbnRyYWN0QWRkcmVzc2VzIiwiYWRkcmVzc2VzIiwiT2JqZWN0IiwiYXNzaWduIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./config/wagmi.ts\n");
+
+/***/ }),
+
+/***/ "./pages/_app.tsx":
+/*!************************!*\
+  !*** ./pages/_app.tsx ***!
+  \************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tanstack/react-query */ \"@tanstack/react-query\");\n/* harmony import */ var wagmi__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! wagmi */ \"wagmi\");\n/* harmony import */ var _config_wagmi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/config/wagmi */ \"./config/wagmi.ts\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/styles/globals.css */ \"./styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _mui_material_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/styles */ \"@mui/material/styles\");\n/* harmony import */ var _mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material/CssBaseline */ \"@mui/material/CssBaseline\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__, wagmi__WEBPACK_IMPORTED_MODULE_2__, _config_wagmi__WEBPACK_IMPORTED_MODULE_3__, _mui_material_styles__WEBPACK_IMPORTED_MODULE_6__, _mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_7__]);\n([_tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__, wagmi__WEBPACK_IMPORTED_MODULE_2__, _config_wagmi__WEBPACK_IMPORTED_MODULE_3__, _mui_material_styles__WEBPACK_IMPORTED_MODULE_6__, _mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_7__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n\n\n\n\n\n// Создание темы Material UI, соответствующей цветам Tailwind\nconst theme = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_6__.createTheme)({\n    palette: {\n        primary: {\n            main: \"#0095ff\",\n            light: \"#3ecbff\",\n            dark: \"#0077cc\"\n        },\n        secondary: {\n            main: \"#f98307\",\n            light: \"#ffa41f\",\n            dark: \"#dd6302\"\n        },\n        error: {\n            main: \"#ef4444\"\n        },\n        warning: {\n            main: \"#f59e0b\"\n        },\n        info: {\n            main: \"#3b82f6\"\n        },\n        success: {\n            main: \"#10b981\"\n        },\n        background: {\n            default: \"#f9fafb\",\n            paper: \"#ffffff\"\n        }\n    },\n    typography: {\n        fontFamily: \"Inter, system-ui, Avenir, Helvetica, Arial, sans-serif\",\n        h1: {\n            fontWeight: 700\n        },\n        h2: {\n            fontWeight: 700\n        },\n        h3: {\n            fontWeight: 600\n        },\n        h4: {\n            fontWeight: 600\n        },\n        h5: {\n            fontWeight: 600\n        },\n        h6: {\n            fontWeight: 600\n        }\n    },\n    shape: {\n        borderRadius: 8\n    },\n    components: {\n        MuiButton: {\n            styleOverrides: {\n                root: {\n                    textTransform: \"none\"\n                }\n            }\n        },\n        MuiCard: {\n            styleOverrides: {\n                root: {\n                    borderRadius: \"12px\"\n                }\n            }\n        }\n    }\n});\n// Отключение предупреждения о fetchPriority\n// @ts-ignore Игнорируем ошибку TypeScript для этого объявления\nif (false) {}\n// Создание клиента для React Query\nconst queryClient = new _tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__.QueryClient({\n    defaultOptions: {\n        queries: {\n            refetchOnWindowFocus: false,\n            retry: 1\n        }\n    }\n});\nfunction MyApp({ Component, pageProps }) {\n    // Перехват ошибок wagmi\n    (0,react__WEBPACK_IMPORTED_MODULE_5__.useEffect)(()=>{\n        const handleWagmiError = (error)=>{\n            console.error(\"Wagmi глобальная ошибка:\", error);\n        };\n        window.addEventListener(\"unhandledrejection\", handleWagmiError);\n        return ()=>{\n            window.removeEventListener(\"unhandledrejection\", handleWagmiError);\n        };\n    }, []);\n    // Проверка наличия MetaMask\n    (0,react__WEBPACK_IMPORTED_MODULE_5__.useEffect)(()=>{\n        const checkMetaMask = ()=>{\n            if (false) {}\n        };\n        checkMetaMask();\n    }, []);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(wagmi__WEBPACK_IMPORTED_MODULE_2__.WagmiConfig, {\n        config: _config_wagmi__WEBPACK_IMPORTED_MODULE_3__.wagmiConfig,\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_1__.QueryClientProvider, {\n            client: queryClient,\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_mui_material_styles__WEBPACK_IMPORTED_MODULE_6__.ThemeProvider, {\n                theme: theme,\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_mui_material_CssBaseline__WEBPACK_IMPORTED_MODULE_7__[\"default\"], {}, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\Admin\\\\Desktop\\\\Новая папка (12)\\\\chihuahua-capital\\\\packages\\\\frontend\\\\pages\\\\_app.tsx\",\n                        lineNumber: 137,\n                        columnNumber: 11\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                        ...pageProps\n                    }, void 0, false, {\n                        fileName: \"C:\\\\Users\\\\Admin\\\\Desktop\\\\Новая папка (12)\\\\chihuahua-capital\\\\packages\\\\frontend\\\\pages\\\\_app.tsx\",\n                        lineNumber: 138,\n                        columnNumber: 11\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"C:\\\\Users\\\\Admin\\\\Desktop\\\\Новая папка (12)\\\\chihuahua-capital\\\\packages\\\\frontend\\\\pages\\\\_app.tsx\",\n                lineNumber: 136,\n                columnNumber: 9\n            }, this)\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\Admin\\\\Desktop\\\\Новая папка (12)\\\\chihuahua-capital\\\\packages\\\\frontend\\\\pages\\\\_app.tsx\",\n            lineNumber: 135,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\Admin\\\\Desktop\\\\Новая папка (12)\\\\chihuahua-capital\\\\packages\\\\frontend\\\\pages\\\\_app.tsx\",\n        lineNumber: 134,\n        columnNumber: 5\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyApp);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQXlFO0FBQ3JDO0FBRVM7QUFDZjtBQUNJO0FBQ21CO0FBQ0Q7QUFDRDtBQUVuRCw2REFBNkQ7QUFDN0QsTUFBTVEsUUFBUUQsaUVBQVdBLENBQUM7SUFDeEJFLFNBQVM7UUFDUEMsU0FBUztZQUNQQyxNQUFNO1lBQ05DLE9BQU87WUFDUEMsTUFBTTtRQUNSO1FBQ0FDLFdBQVc7WUFDVEgsTUFBTTtZQUNOQyxPQUFPO1lBQ1BDLE1BQU07UUFDUjtRQUNBRSxPQUFPO1lBQ0xKLE1BQU07UUFDUjtRQUNBSyxTQUFTO1lBQ1BMLE1BQU07UUFDUjtRQUNBTSxNQUFNO1lBQ0pOLE1BQU07UUFDUjtRQUNBTyxTQUFTO1lBQ1BQLE1BQU07UUFDUjtRQUNBUSxZQUFZO1lBQ1ZDLFNBQVM7WUFDVEMsT0FBTztRQUNUO0lBQ0Y7SUFDQUMsWUFBWTtRQUNWQyxZQUFZO1FBQ1pDLElBQUk7WUFDRkMsWUFBWTtRQUNkO1FBQ0FDLElBQUk7WUFDRkQsWUFBWTtRQUNkO1FBQ0FFLElBQUk7WUFDRkYsWUFBWTtRQUNkO1FBQ0FHLElBQUk7WUFDRkgsWUFBWTtRQUNkO1FBQ0FJLElBQUk7WUFDRkosWUFBWTtRQUNkO1FBQ0FLLElBQUk7WUFDRkwsWUFBWTtRQUNkO0lBQ0Y7SUFDQU0sT0FBTztRQUNMQyxjQUFjO0lBQ2hCO0lBQ0FDLFlBQVk7UUFDVkMsV0FBVztZQUNUQyxnQkFBZ0I7Z0JBQ2RDLE1BQU07b0JBQ0pDLGVBQWU7Z0JBQ2pCO1lBQ0Y7UUFDRjtRQUNBQyxTQUFTO1lBQ1BILGdCQUFnQjtnQkFDZEMsTUFBTTtvQkFDSkosY0FBYztnQkFDaEI7WUFDRjtRQUNGO0lBQ0Y7QUFDRjtBQUVBLDRDQUE0QztBQUM1QywrREFBK0Q7QUFDL0QsSUFBSSxLQUFrQixFQUFhLEVBV2xDO0FBRUQsbUNBQW1DO0FBQ25DLE1BQU1XLGNBQWMsSUFBSTNDLDhEQUFXQSxDQUFDO0lBQ2xDNEMsZ0JBQWdCO1FBQ2RDLFNBQVM7WUFDUEMsc0JBQXNCO1lBQ3RCQyxPQUFPO1FBQ1Q7SUFDRjtBQUNGO0FBRUEsU0FBU0MsTUFBTSxFQUFFQyxTQUFTLEVBQUVDLFNBQVMsRUFBWTtJQUMvQyx3QkFBd0I7SUFDeEI5QyxnREFBU0EsQ0FBQztRQUNSLE1BQU0rQyxtQkFBbUIsQ0FBQ3BDO1lBQ3hCeUIsUUFBUXpCLEtBQUssQ0FBQyw0QkFBNEJBO1FBQzVDO1FBRUFxQyxPQUFPQyxnQkFBZ0IsQ0FBQyxzQkFBc0JGO1FBRTlDLE9BQU87WUFDTEMsT0FBT0UsbUJBQW1CLENBQUMsc0JBQXNCSDtRQUNuRDtJQUNGLEdBQUcsRUFBRTtJQUVMLDRCQUE0QjtJQUM1Qi9DLGdEQUFTQSxDQUFDO1FBQ1IsTUFBTW1ELGdCQUFnQjtZQUNwQixJQUFJLEtBQWlELEVBQUUsRUFFdEQ7UUFDSDtRQUVBQTtJQUNGLEdBQUcsRUFBRTtJQUVMLHFCQUNFLDhEQUFDckQsOENBQVdBO1FBQUN3RCxRQUFRdkQsc0RBQVdBO2tCQUM5Qiw0RUFBQ0Ysc0VBQW1CQTtZQUFDMEQsUUFBUWhCO3NCQUMzQiw0RUFBQ3RDLCtEQUFhQTtnQkFBQ0csT0FBT0E7O2tDQUNwQiw4REFBQ0YsaUVBQVdBOzs7OztrQ0FDWiw4REFBQzJDO3dCQUFXLEdBQUdDLFNBQVM7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLbEM7QUFFQSxpRUFBZUYsS0FBS0EsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL0BjaGlodWFodWEtY2FwaXRhbC9mcm9udGVuZC8uL3BhZ2VzL19hcHAudHN4PzJmYmUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUXVlcnlDbGllbnQsIFF1ZXJ5Q2xpZW50UHJvdmlkZXIgfSBmcm9tICdAdGFuc3RhY2svcmVhY3QtcXVlcnknO1xyXG5pbXBvcnQgeyBXYWdtaUNvbmZpZyB9IGZyb20gJ3dhZ21pJztcclxuaW1wb3J0IHR5cGUgeyBBcHBQcm9wcyB9IGZyb20gJ25leHQvYXBwJztcclxuaW1wb3J0IHsgd2FnbWlDb25maWcgfSBmcm9tICdAL2NvbmZpZy93YWdtaSc7XHJcbmltcG9ydCAnQC9zdHlsZXMvZ2xvYmFscy5jc3MnO1xyXG5pbXBvcnQgeyB1c2VFZmZlY3QgfSBmcm9tICdyZWFjdCc7XHJcbmltcG9ydCB7IFRoZW1lUHJvdmlkZXIgfSBmcm9tICdAbXVpL21hdGVyaWFsL3N0eWxlcyc7XHJcbmltcG9ydCBDc3NCYXNlbGluZSBmcm9tICdAbXVpL21hdGVyaWFsL0Nzc0Jhc2VsaW5lJztcclxuaW1wb3J0IHsgY3JlYXRlVGhlbWUgfSBmcm9tICdAbXVpL21hdGVyaWFsL3N0eWxlcyc7XHJcblxyXG4vLyDQodC+0LfQtNCw0L3QuNC1INGC0LXQvNGLIE1hdGVyaWFsIFVJLCDRgdC+0L7RgtCy0LXRgtGB0YLQstGD0Y7RidC10Lkg0YbQstC10YLQsNC8IFRhaWx3aW5kXHJcbmNvbnN0IHRoZW1lID0gY3JlYXRlVGhlbWUoe1xyXG4gIHBhbGV0dGU6IHtcclxuICAgIHByaW1hcnk6IHtcclxuICAgICAgbWFpbjogJyMwMDk1ZmYnLCAvLyBwcmltYXJ5LTYwMCDQuNC3IHRhaWx3aW5kXHJcbiAgICAgIGxpZ2h0OiAnIzNlY2JmZicsIC8vIHByaW1hcnktNDAwXHJcbiAgICAgIGRhcms6ICcjMDA3N2NjJywgLy8gcHJpbWFyeS03MDBcclxuICAgIH0sXHJcbiAgICBzZWNvbmRhcnk6IHtcclxuICAgICAgbWFpbjogJyNmOTgzMDcnLCAvLyBzZWNvbmRhcnktNTAwXHJcbiAgICAgIGxpZ2h0OiAnI2ZmYTQxZicsIC8vIHNlY29uZGFyeS00MDBcclxuICAgICAgZGFyazogJyNkZDYzMDInLCAvLyBzZWNvbmRhcnktNjAwXHJcbiAgICB9LFxyXG4gICAgZXJyb3I6IHtcclxuICAgICAgbWFpbjogJyNlZjQ0NDQnLFxyXG4gICAgfSxcclxuICAgIHdhcm5pbmc6IHtcclxuICAgICAgbWFpbjogJyNmNTllMGInLFxyXG4gICAgfSxcclxuICAgIGluZm86IHtcclxuICAgICAgbWFpbjogJyMzYjgyZjYnLFxyXG4gICAgfSxcclxuICAgIHN1Y2Nlc3M6IHtcclxuICAgICAgbWFpbjogJyMxMGI5ODEnLFxyXG4gICAgfSxcclxuICAgIGJhY2tncm91bmQ6IHtcclxuICAgICAgZGVmYXVsdDogJyNmOWZhZmInLCAvLyBncmF5LTUwXHJcbiAgICAgIHBhcGVyOiAnI2ZmZmZmZicsXHJcbiAgICB9LFxyXG4gIH0sXHJcbiAgdHlwb2dyYXBoeToge1xyXG4gICAgZm9udEZhbWlseTogJ0ludGVyLCBzeXN0ZW0tdWksIEF2ZW5pciwgSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZicsXHJcbiAgICBoMToge1xyXG4gICAgICBmb250V2VpZ2h0OiA3MDAsXHJcbiAgICB9LFxyXG4gICAgaDI6IHtcclxuICAgICAgZm9udFdlaWdodDogNzAwLFxyXG4gICAgfSxcclxuICAgIGgzOiB7XHJcbiAgICAgIGZvbnRXZWlnaHQ6IDYwMCxcclxuICAgIH0sXHJcbiAgICBoNDoge1xyXG4gICAgICBmb250V2VpZ2h0OiA2MDAsXHJcbiAgICB9LFxyXG4gICAgaDU6IHtcclxuICAgICAgZm9udFdlaWdodDogNjAwLFxyXG4gICAgfSxcclxuICAgIGg2OiB7XHJcbiAgICAgIGZvbnRXZWlnaHQ6IDYwMCxcclxuICAgIH0sXHJcbiAgfSxcclxuICBzaGFwZToge1xyXG4gICAgYm9yZGVyUmFkaXVzOiA4LFxyXG4gIH0sXHJcbiAgY29tcG9uZW50czoge1xyXG4gICAgTXVpQnV0dG9uOiB7XHJcbiAgICAgIHN0eWxlT3ZlcnJpZGVzOiB7XHJcbiAgICAgICAgcm9vdDoge1xyXG4gICAgICAgICAgdGV4dFRyYW5zZm9ybTogJ25vbmUnLFxyXG4gICAgICAgIH0sXHJcbiAgICAgIH0sXHJcbiAgICB9LFxyXG4gICAgTXVpQ2FyZDoge1xyXG4gICAgICBzdHlsZU92ZXJyaWRlczoge1xyXG4gICAgICAgIHJvb3Q6IHtcclxuICAgICAgICAgIGJvcmRlclJhZGl1czogJzEycHgnLFxyXG4gICAgICAgIH0sXHJcbiAgICAgIH0sXHJcbiAgICB9LFxyXG4gIH0sXHJcbn0pO1xyXG5cclxuLy8g0J7RgtC60LvRjtGH0LXQvdC40LUg0L/RgNC10LTRg9C/0YDQtdC20LTQtdC90LjRjyDQviBmZXRjaFByaW9yaXR5XHJcbi8vIEB0cy1pZ25vcmUg0JjQs9C90L7RgNC40YDRg9C10Lwg0L7RiNC40LHQutGDIFR5cGVTY3JpcHQg0LTQu9GPINGN0YLQvtCz0L4g0L7QsdGK0Y/QstC70LXQvdC40Y9cclxuaWYgKHR5cGVvZiB3aW5kb3cgIT09ICd1bmRlZmluZWQnKSB7XHJcbiAgY29uc3Qgb3JpZ2luYWxDb25zb2xlRXJyb3IgPSBjb25zb2xlLmVycm9yO1xyXG4gIGNvbnNvbGUuZXJyb3IgPSAoLi4uYXJnczogYW55W10pID0+IHtcclxuICAgIGlmIChcclxuICAgICAgdHlwZW9mIGFyZ3NbMF0gPT09ICdzdHJpbmcnICYmXHJcbiAgICAgIGFyZ3NbMF0uaW5jbHVkZXMoJ1dhcm5pbmc6IFJlYWN0IGRvZXMgbm90IHJlY29nbml6ZSB0aGUgYGZldGNoUHJpb3JpdHlgIHByb3AnKVxyXG4gICAgKSB7XHJcbiAgICAgIHJldHVybjtcclxuICAgIH1cclxuICAgIG9yaWdpbmFsQ29uc29sZUVycm9yKC4uLmFyZ3MpO1xyXG4gIH07XHJcbn1cclxuXHJcbi8vINCh0L7Qt9C00LDQvdC40LUg0LrQu9C40LXQvdGC0LAg0LTQu9GPIFJlYWN0IFF1ZXJ5XHJcbmNvbnN0IHF1ZXJ5Q2xpZW50ID0gbmV3IFF1ZXJ5Q2xpZW50KHtcclxuICBkZWZhdWx0T3B0aW9uczoge1xyXG4gICAgcXVlcmllczoge1xyXG4gICAgICByZWZldGNoT25XaW5kb3dGb2N1czogZmFsc2UsXHJcbiAgICAgIHJldHJ5OiAxLFxyXG4gICAgfSxcclxuICB9LFxyXG59KTtcclxuXHJcbmZ1bmN0aW9uIE15QXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfTogQXBwUHJvcHMpIHtcclxuICAvLyDQn9C10YDQtdGF0LLQsNGCINC+0YjQuNCx0L7QuiB3YWdtaVxyXG4gIHVzZUVmZmVjdCgoKSA9PiB7XHJcbiAgICBjb25zdCBoYW5kbGVXYWdtaUVycm9yID0gKGVycm9yOiBhbnkpID0+IHtcclxuICAgICAgY29uc29sZS5lcnJvcignV2FnbWkg0LPQu9C+0LHQsNC70YzQvdCw0Y8g0L7RiNC40LHQutCwOicsIGVycm9yKTtcclxuICAgIH07XHJcblxyXG4gICAgd2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ3VuaGFuZGxlZHJlamVjdGlvbicsIGhhbmRsZVdhZ21pRXJyb3IpO1xyXG4gICAgXHJcbiAgICByZXR1cm4gKCkgPT4ge1xyXG4gICAgICB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcigndW5oYW5kbGVkcmVqZWN0aW9uJywgaGFuZGxlV2FnbWlFcnJvcik7XHJcbiAgICB9O1xyXG4gIH0sIFtdKTtcclxuXHJcbiAgLy8g0J/RgNC+0LLQtdGA0LrQsCDQvdCw0LvQuNGH0LjRjyBNZXRhTWFza1xyXG4gIHVzZUVmZmVjdCgoKSA9PiB7XHJcbiAgICBjb25zdCBjaGVja01ldGFNYXNrID0gKCkgPT4ge1xyXG4gICAgICBpZiAodHlwZW9mIHdpbmRvdyAhPT0gJ3VuZGVmaW5lZCcgJiYgIXdpbmRvdy5ldGhlcmV1bSkge1xyXG4gICAgICAgIGNvbnNvbGUud2FybignTWV0YU1hc2sg0L3QtSDRg9GB0YLQsNC90L7QstC70LXQvScpO1xyXG4gICAgICB9XHJcbiAgICB9O1xyXG5cclxuICAgIGNoZWNrTWV0YU1hc2soKTtcclxuICB9LCBbXSk7XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8V2FnbWlDb25maWcgY29uZmlnPXt3YWdtaUNvbmZpZ30+XHJcbiAgICAgIDxRdWVyeUNsaWVudFByb3ZpZGVyIGNsaWVudD17cXVlcnlDbGllbnR9PlxyXG4gICAgICAgIDxUaGVtZVByb3ZpZGVyIHRoZW1lPXt0aGVtZX0+XHJcbiAgICAgICAgICA8Q3NzQmFzZWxpbmUgLz5cclxuICAgICAgICAgIDxDb21wb25lbnQgey4uLnBhZ2VQcm9wc30gLz5cclxuICAgICAgICA8L1RoZW1lUHJvdmlkZXI+XHJcbiAgICAgIDwvUXVlcnlDbGllbnRQcm92aWRlcj5cclxuICAgIDwvV2FnbWlDb25maWc+XHJcbiAgKTtcclxufVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgTXlBcHA7ICJdLCJuYW1lcyI6WyJRdWVyeUNsaWVudCIsIlF1ZXJ5Q2xpZW50UHJvdmlkZXIiLCJXYWdtaUNvbmZpZyIsIndhZ21pQ29uZmlnIiwidXNlRWZmZWN0IiwiVGhlbWVQcm92aWRlciIsIkNzc0Jhc2VsaW5lIiwiY3JlYXRlVGhlbWUiLCJ0aGVtZSIsInBhbGV0dGUiLCJwcmltYXJ5IiwibWFpbiIsImxpZ2h0IiwiZGFyayIsInNlY29uZGFyeSIsImVycm9yIiwid2FybmluZyIsImluZm8iLCJzdWNjZXNzIiwiYmFja2dyb3VuZCIsImRlZmF1bHQiLCJwYXBlciIsInR5cG9ncmFwaHkiLCJmb250RmFtaWx5IiwiaDEiLCJmb250V2VpZ2h0IiwiaDIiLCJoMyIsImg0IiwiaDUiLCJoNiIsInNoYXBlIiwiYm9yZGVyUmFkaXVzIiwiY29tcG9uZW50cyIsIk11aUJ1dHRvbiIsInN0eWxlT3ZlcnJpZGVzIiwicm9vdCIsInRleHRUcmFuc2Zvcm0iLCJNdWlDYXJkIiwib3JpZ2luYWxDb25zb2xlRXJyb3IiLCJjb25zb2xlIiwiYXJncyIsImluY2x1ZGVzIiwicXVlcnlDbGllbnQiLCJkZWZhdWx0T3B0aW9ucyIsInF1ZXJpZXMiLCJyZWZldGNoT25XaW5kb3dGb2N1cyIsInJldHJ5IiwiTXlBcHAiLCJDb21wb25lbnQiLCJwYWdlUHJvcHMiLCJoYW5kbGVXYWdtaUVycm9yIiwid2luZG93IiwiYWRkRXZlbnRMaXN0ZW5lciIsInJlbW92ZUV2ZW50TGlzdGVuZXIiLCJjaGVja01ldGFNYXNrIiwiZXRoZXJldW0iLCJ3YXJuIiwiY29uZmlnIiwiY2xpZW50Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/_app.tsx\n");
+
+/***/ }),
+
+/***/ "./styles/globals.css":
+/*!****************************!*\
+  !*** ./styles/globals.css ***!
+  \****************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ }),
+
+/***/ "@mui/material/CssBaseline":
+/*!********************************************!*\
+  !*** external "@mui/material/CssBaseline" ***!
+  \********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("@mui/material/CssBaseline");;
+
+/***/ }),
+
+/***/ "@mui/material/styles":
+/*!***************************************!*\
+  !*** external "@mui/material/styles" ***!
+  \***************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("@mui/material/styles");;
+
+/***/ }),
+
+/***/ "@tanstack/react-query":
+/*!****************************************!*\
+  !*** external "@tanstack/react-query" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("@tanstack/react-query");;
+
+/***/ }),
+
+/***/ "wagmi":
+/*!************************!*\
+  !*** external "wagmi" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("wagmi");;
+
+/***/ }),
+
+/***/ "wagmi/chains":
+/*!*******************************!*\
+  !*** external "wagmi/chains" ***!
+  \*******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("wagmi/chains");;
+
+/***/ }),
+
+/***/ "wagmi/connectors/metaMask":
+/*!********************************************!*\
+  !*** external "wagmi/connectors/metaMask" ***!
+  \********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("wagmi/connectors/metaMask");;
+
+/***/ }),
+
+/***/ "wagmi/providers/public":
+/*!*****************************************!*\
+  !*** external "wagmi/providers/public" ***!
+  \*****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("wagmi/providers/public");;
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/_app.tsx"));
+module.exports = __webpack_exports__;
+
+})();
