@@ -82,6 +82,7 @@ const Layout = ({
                   width={40}
                   height={40}
                   className="mr-3"
+                  style={{ objectFit: 'contain' }}
                 />
               </motion.div>
               <motion.h1 
@@ -199,6 +200,7 @@ const Layout = ({
                   width={32}
                   height={32}
                   className="mr-2"
+                  style={{ objectFit: 'contain' }}
                 />
                 <h3 className="text-xl font-bold text-gray-900">Chihuahua Capital</h3>
               </div>

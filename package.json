@@ -2,6 +2,7 @@
   "name": "chihuahua-capital",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@10.5.0",
   "workspaces": [
     "packages/*"
   ],
@@ -27,5 +28,8 @@
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
     "framer-motion": "^12.7.4"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0"
   }
 }

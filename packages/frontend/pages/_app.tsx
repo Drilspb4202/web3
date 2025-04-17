@@ -80,14 +80,17 @@ const theme = createTheme({
   },
 });
 
-// Отключение предупреждения о fetchPriority
+// Отключение предупреждений
 // @ts-ignore Игнорируем ошибку TypeScript для этого объявления
 if (typeof window !== 'undefined') {
   const originalConsoleError = console.error;
   console.error = (...args: any[]) => {
+    // Игнорируем предупреждение о fetchPriority
     if (
       typeof args[0] === 'string' &&
-      args[0].includes('Warning: React does not recognize the `fetchPriority` prop')
+      (args[0].includes('Warning: React does not recognize the `fetchPriority` prop') ||
+       args[0].includes('legacy prop "layout"') ||
+       args[0].includes('legacy prop "objectFit"'))
     ) {
       return;
     }
